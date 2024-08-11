@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Kodchasan', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.error-text {
+    margin-top: 50px;
+    width: 250px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.error-message {
+    font-size: 36px;
+    line-height: 1.2;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.info-text {
+    font-size: 18px;
+    margin-top: 20px;
+    opacity: 0.8;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.subscribe-link {
+    display: block;
+    margin-top: 30px;
+    color: #5c93e1;
+    text-decoration: none;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.subscribe-link:hover {
+    text-decoration: underline;
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
